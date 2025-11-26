@@ -4,18 +4,19 @@ import { Link } from 'react-router-dom';
 
 export const Home: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-slate-900">
       {/* Hero Section */}
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh]">
         {/* Background Image - NAU/Flagstaff Winter Vibe */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-nau-blue">
+          {/* Fallback background color in case image fails */}
           <img 
-            src="https://images.unsplash.com/photo-1548625361-12e2d9760777?q=80&w=2128&auto=format&fit=crop" 
-            alt="Snowy Campus Building" 
-            className="w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=2070&auto=format&fit=crop" 
+            alt="NAU Campus Winter Style" 
+            className="w-full h-full object-cover opacity-60"
           />
           {/* Gradients for text readability */}
-          <div className="absolute inset-0 bg-nau-blue/80 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-nau-blue/90 to-nau-blue/40 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
         </div>
 

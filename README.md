@@ -1,64 +1,73 @@
-# NAU BMS Capstone: Intelligent Alarm Management Strategy
+# Intelligent BMS Alarm Management Strategy
+## NAU Computer Engineering Capstone (2025-2026)
 
-**Academic Year:** 2025 Fall - 2026 Spring  
-**Project:** Intelligent Building Management System (BMS) Alarm Management Strategy  
-**Institution:** Northern Arizona University (NAU)
+**Project Lead:** Shawn Young  
+**Institution:** Northern Arizona University (NAU)  
+**Department:** Electrical Engineering and Computer Science
 
-This is the frontend showcase website for the NAU Computer Engineering Capstone project. It serves as a presentation layer to demonstrate how we categorize, prioritize, and manage building alarms.
+### 📋 Project Overview
 
-## 🏗️ Project Context
+The Northern Arizona University Facility Services team manages a complex ecosystem of building systems using **Alerton Compass**, **Niagara Framework**, and **Willow**. A critical operational challenge is the high volume of "nuisance alarms"—repetitive or non-actionable alerts that cause operator fatigue and obscure critical system failures.
 
-NAU operates a centralized BMS monitoring HVAC and mechanical systems. Frequent "nuisance alarms" (false positives) obscure critical issues, leading to operator fatigue and inefficiency.
+This Capstone project delivers a modern web-based **Alarm Management Dashboard** that acts as an intelligence layer on top of existing infrastructure.
 
-**Our Solution:**
-1.  **Analyze** patterns of nuisance alarms across campus.
-2.  **Develop** suppression logic based on occupancy and schedules.
-3.  **Design** a prioritized dashboard for high-value alerts.
+**Key Objectives:**
+*   **Data Aggregation:** Unify alarm streams from disparate BMS protocols.
+*   **Noise Reduction:** Implement logic to suppress alarms based on building occupancy and schedule status.
+*   **Prioritization:** Dynamic ranking of alarms using weighted scoring algorithms.
+*   **Modern Interface:** A responsive React-based dashboard for facility operators.
 
-**Key Integrations:**
-*   **Willow**: Digital Twin & Analytics
-*   **Alerton Compass**: Building Controls
-*   **Niagara Framework**: System Integration
+### 🏗️ System Architecture
 
-## 🚀 How to Run Locally
+The solution is architected as a decoupled frontend application that consumes BMS data streams (simulated for this demonstration via JSON payloads).
 
-This project is built with React, Vite, and Tailwind CSS.
+*   **Frontend:** React.js (v18) with TypeScript for type safety.
+*   **Build System:** Vite for high-performance local development and bundling.
+*   **Visualization:** Recharts for alarm volume histograms and trend analysis.
+*   **Styling:** Tailwind CSS for a strictly typed, responsive design system.
+*   **Inference Engine:** Integration with Cloud APIs to provide natural language root-cause analysis for alarm descriptions.
 
-### 1. Prerequisites
-*   **Node.js**: [Download LTS Version](https://nodejs.org/) (Version 18+ recommended)
-*   **Git**: [Download Git](https://git-scm.com/)
+### 🚀 Local Development Guide
 
-### 2. Installation
-Open your terminal (or VS Code Terminal) in the project folder and run:
+Follow these instructions to deploy the application on a local machine for testing or presentation.
+
+#### 1. System Prerequisites
+*   **Node.js**: Version 18.0.0 or higher is required. [Download Node.js](https://nodejs.org/)
+*   **npm**: Included with Node.js.
+
+#### 2. Installation
+Clone the repository (or unzip the project source) and install dependencies:
 
 ```bash
-# Install all required dependencies (including React Router)
+# Navigate to project directory
+cd BMS-Alarm-Capstone
+
+# Install project dependencies
 npm install
 ```
 
-### 3. API Key Configuration (Optional)
-To enable the AI Analysis features (Gemini), you need an API key.
-1.  Create a file named `.env` in the root folder.
-2.  Add your key:
-    ```env
-    API_KEY=your_google_gemini_api_key_here
-    ```
-*(Note: The site runs without a key, but the "AI Advisor" feature will mock responses or show an error.)*
+#### 3. Configuration
+The application runs out-of-the-box with mock data. To enable the optional "Smart Advisor" feature (which uses cloud inference to analyze alarm text), create an environment file:
 
-### 4. Start Development Server
+1.  Create a file named `.env` in the root directory.
+2.  Add your API key:
+    ```env
+    API_KEY=your_api_key_here
+    ```
+
+#### 4. Running the Application
+Start the local development server:
+
 ```bash
 npm run dev
 ```
-Click the link displayed in the terminal (usually `http://localhost:5173`) to open the site.
+The application will launch automatically at `http://localhost:5173`.
 
-## 🛠️ Tech Stack
-*   **Framework**: React 18 + TypeScript
-*   **Build Tool**: Vite
-*   **Styling**: Tailwind CSS
-*   **Routing**: React Router DOM
-*   **Charts**: Recharts
-*   **Icons**: Lucide React
-*   **AI Integration**: Google Gemini API
+### 📂 Project Structure
+
+*   `/src/components/Dashboard`: Contains the main operator interface, charts, and alarm feed lists.
+*   `/src/services`: TypeScript services for handling API calls and data logic.
+*   `/src/types`: Strict TypeScript definitions for BMS Alarm objects (IEEE/ASHRAE naming conventions compliant).
 
 ---
-&copy; 2026 NAU Capstone Team.
+© 2026 Northern Arizona University Capstone Team. All Rights Reserved.
