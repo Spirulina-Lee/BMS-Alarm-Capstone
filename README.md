@@ -1,8 +1,6 @@
 # Intelligent BMS Alarm Management Strategy
 ## NAU Computer Engineering Capstone (2025-2026)
 
-**Project Lead:** Shawn Young  
-**Institution:** Northern Arizona University (NAU)  
 
 ---
 
