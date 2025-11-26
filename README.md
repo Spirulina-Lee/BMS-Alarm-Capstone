@@ -25,7 +25,6 @@ The solution is architected as a decoupled frontend application that consumes BM
 *   **Build System:** Vite for high-performance local development and bundling.
 *   **Visualization:** Recharts for alarm volume histograms and trend analysis.
 *   **Styling:** Tailwind CSS for a strictly typed, responsive design system.
-*   **Inference Engine:** Integration with Cloud APIs to provide natural language root-cause analysis for alarm descriptions.
 
 ### 🚀 Local Development Guide
 
@@ -46,16 +45,7 @@ cd BMS-Alarm-Capstone
 npm install
 ```
 
-#### 3. Configuration
-The application runs out-of-the-box with mock data. To enable the optional "Smart Advisor" feature (which uses cloud inference to analyze alarm text), create an environment file:
-
-1.  Create a file named `.env` in the root directory.
-2.  Add your API key:
-    ```env
-    API_KEY=your_api_key_here
-    ```
-
-#### 4. Running the Application
+#### 3. Running the Application
 Start the local development server:
 
 ```bash
@@ -66,7 +56,7 @@ The application will launch automatically at `http://localhost:5173`.
 ### 📂 Project Structure
 
 *   `/src/components/Dashboard`: Contains the main operator interface, charts, and alarm feed lists.
-*   `/src/services`: TypeScript services for handling API calls and data logic.
+*   `/src/services`: TypeScript services for handling data logic.
 *   `/src/types`: Strict TypeScript definitions for BMS Alarm objects (IEEE/ASHRAE naming conventions compliant).
 
 ---

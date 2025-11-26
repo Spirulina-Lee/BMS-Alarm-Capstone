@@ -7,11 +7,11 @@ export const Home: React.FC = () => {
     <div className="flex flex-col min-h-screen bg-slate-900">
       {/* Hero Section */}
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh]">
-        {/* Background Image - NAU/Flagstaff Winter Vibe */}
+        {/* Background Image - NAU/Flagstaff Winter Vibe (Red Brick + Snow) */}
         <div className="absolute inset-0 z-0 bg-nau-blue">
           {/* Fallback background color in case image fails */}
           <img 
-            src="https://images.unsplash.com/photo-1548842106-96b301764653?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1592931213038-66a931065f52?q=80&w=2070&auto=format&fit=crop" 
             alt="NAU Campus Winter Style" 
             className="w-full h-full object-cover opacity-60"
           />

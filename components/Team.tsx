@@ -25,22 +25,22 @@ export const Team: React.FC = () => {
         {/* Team Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 max-w-5xl mx-auto">
             {teamMembers.map((member, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-center text-left gap-4">
-                    <div className="h-12 w-12 rounded-full bg-nau-blue/10 flex items-center justify-center shrink-0">
+                <div key={index} className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row items-start sm:items-center text-left gap-4 h-full">
+                    <div className="h-12 w-12 rounded-full bg-nau-blue/10 flex items-center justify-center shrink-0 mt-1 sm:mt-0">
                         {member.role === 'Team Lead' ? (
                             <Award className="h-6 w-6 text-nau-gold" />
                         ) : (
                             <Users className="h-6 w-6 text-nau-blue" />
                         )}
                     </div>
-                    <div className="min-w-0 flex-1">
+                    <div className="min-w-0 flex-1 w-full">
                         <h3 className="text-lg font-bold text-slate-900">{member.name}</h3>
-                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm mt-0.5">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-x-2 gap-y-1 text-sm mt-1">
                             <span className={`font-medium shrink-0 ${member.role === 'Team Lead' ? 'text-nau-gold' : 'text-slate-500'}`}>
                                 {member.role}
                             </span>
                             <span className="text-slate-300 hidden sm:inline">•</span>
-                            <span className="text-slate-500">{member.major}</span>
+                            <span className="text-slate-500 leading-tight">{member.major}</span>
                         </div>
                     </div>
                 </div>
