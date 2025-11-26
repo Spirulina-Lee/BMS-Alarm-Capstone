@@ -9,13 +9,13 @@ export const Home: React.FC = () => {
       <div 
         className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh] bg-nau-blue bg-cover bg-center bg-no-repeat"
         style={{
-          // Using a high-quality Unsplash image of a red brick university building in winter (NAU Style)
-          backgroundImage: `url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop')`
+          // Updated to a reliable Unsplash image: Snowy Red Brick University Building (Matches NAU Flagstaff style)
+          backgroundImage: `url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop')`
         }}
       >
-        {/* Overlay - Adjusted opacity to be lighter so image is clearly visible */}
-        <div className="absolute inset-0 bg-nau-blue/60 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-black/30"></div>
+        {/* Overlay - Lighter opacity (50%) to ensure the brick building is visible */}
+        <div className="absolute inset-0 bg-nau-blue/50 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
