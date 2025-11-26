@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 export const Hero: React.FC = () => {
   return (
     <div className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden min-h-[calc(100vh-64px)] flex items-center">
-      {/* Background Image - Red brick building with snow/winter vibe suitable for NAU */}
+      {/* Background Image - Snowy Pine Forest for NAU/Flagstaff vibe */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1518182170546-0766ce6fec56?q=80&w=2070&auto=format&fit=crop" 
           alt="NAU Campus Style Background" 
           className="w-full h-full object-cover"
         />

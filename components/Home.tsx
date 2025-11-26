@@ -9,8 +9,8 @@ export const Home: React.FC = () => {
       <div 
         className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh] bg-nau-blue bg-cover bg-center bg-no-repeat"
         style={{
-          // Updated to a reliable Unsplash image: Snowy Red Brick University Building (Matches NAU Flagstaff style)
-          backgroundImage: `url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop')`
+          // Updated to a reliable Unsplash image: Snowy Pine Forest (Matches NAU Flagstaff Mountain Campus style)
+          backgroundImage: `url('https://images.unsplash.com/photo-1518182170546-0766ce6fec56?q=80&w=2070&auto=format&fit=crop')`
         }}
       >
         {/* Overlay - Lighter opacity (50%) to ensure the brick building is visible */}
