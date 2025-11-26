@@ -1,59 +1,64 @@
-# NAU BMS Capstone: Intelligent Alarm Management
+# NAU BMS Capstone: Intelligent Alarm Management Strategy
 
-This is the frontend showcase website for the Northern Arizona University (NAU) Computer Engineering Capstone project (2025-2026).
+**Academic Year:** 2025 Fall - 2026 Spring  
+**Project:** Intelligent Building Management System (BMS) Alarm Management Strategy  
+**Institution:** Northern Arizona University (NAU)
 
-## Project Overview
+This is the frontend showcase website for the NAU Computer Engineering Capstone project. It serves as a presentation layer to demonstrate how we categorize, prioritize, and manage building alarms.
 
-**Intelligent Building Management System (BMS) Alarm Management Strategy**
+## 🏗️ Project Context
 
-NAU operates a centralized BMS monitoring HVAC and mechanical systems. Frequent nuisance alarms obscure critical issues. This project delivers a strategy to prioritize actionable alarms and suppress noise using context-aware logic (occupancy, schedules).
+NAU operates a centralized BMS monitoring HVAC and mechanical systems. Frequent "nuisance alarms" (false positives) obscure critical issues, leading to operator fatigue and inefficiency.
+
+**Our Solution:**
+1.  **Analyze** patterns of nuisance alarms across campus.
+2.  **Develop** suppression logic based on occupancy and schedules.
+3.  **Design** a prioritized dashboard for high-value alerts.
 
 **Key Integrations:**
-*   Willow
-*   Alerton Compass
-*   Niagara Framework
+*   **Willow**: Digital Twin & Analytics
+*   **Alerton Compass**: Building Controls
+*   **Niagara Framework**: System Integration
 
-## Features
+## 🚀 How to Run Locally
 
-*   **Interactive Dashboard**: Visualize alarm data with suppression status.
-*   **AI Advisor**: Uses Google Gemini to analyze selected alarms and provide root cause analysis and recommendations.
-*   **Methodology Overview**: Explains the logic behind alarm filtering.
+This project is built with React, Vite, and Tailwind CSS.
 
-## Local Development
+### 1. Prerequisites
+*   **Node.js**: [Download LTS Version](https://nodejs.org/) (Version 18+ recommended)
+*   **Git**: [Download Git](https://git-scm.com/)
 
-To run this project locally on your machine:
+### 2. Installation
+Open your terminal (or VS Code Terminal) in the project folder and run:
 
-### Prerequisites
-*   Node.js (LTS version recommended)
-*   npm (installed with Node.js)
+```bash
+# Install all required dependencies (including React Router)
+npm install
+```
 
-### Setup
-
-1.  **Clone the repository** (if you haven't already).
-2.  **Install dependencies**:
-    ```bash
-    npm install
+### 3. API Key Configuration (Optional)
+To enable the AI Analysis features (Gemini), you need an API key.
+1.  Create a file named `.env` in the root folder.
+2.  Add your key:
+    ```env
+    API_KEY=your_google_gemini_api_key_here
     ```
-3.  **Configure API Key**:
-    *   Create a `.env` file in the root directory.
-    *   Add your Google Gemini API Key:
-        ```env
-        API_KEY=your_actual_api_key_here
-        ```
-4.  **Run the development server**:
-    ```bash
-    npm run dev
-    ```
-5.  Open the link shown in the terminal (usually `http://localhost:5173`).
+*(Note: The site runs without a key, but the "AI Advisor" feature will mock responses or show an error.)*
 
-## Technologies
-*   React 18
-*   TypeScript
-*   Vite
-*   Tailwind CSS
-*   Recharts
-*   Google Gemini API
-*   React Router DOM
+### 4. Start Development Server
+```bash
+npm run dev
+```
+Click the link displayed in the terminal (usually `http://localhost:5173`) to open the site.
+
+## 🛠️ Tech Stack
+*   **Framework**: React 18 + TypeScript
+*   **Build Tool**: Vite
+*   **Styling**: Tailwind CSS
+*   **Routing**: React Router DOM
+*   **Charts**: Recharts
+*   **Icons**: Lucide React
+*   **AI Integration**: Google Gemini API
 
 ---
 &copy; 2026 NAU Capstone Team.

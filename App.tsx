@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
+import { Home } from './components/Home';
 import { ProjectOverview } from './components/ProjectOverview';
 import { Dashboard } from './components/Dashboard/Dashboard';
 import { Team } from './components/Team';
@@ -31,7 +31,7 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Home />} />
           <Route path="/methodology" element={<ProjectOverview />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/team" element={<Team />} />

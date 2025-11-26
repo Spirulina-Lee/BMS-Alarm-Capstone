@@ -60,20 +60,20 @@ export const Team: React.FC = () => {
                         This project would not have been possible without the support and resources provided by our partners. We would like to extend our sincere gratitude to:
                     </p>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                            <h4 className="font-bold text-nau-blue mb-2">Willow</h4>
-                            <p className="text-sm text-slate-600">For their digital twin platform and data integration support.</p>
+                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100 hover:bg-slate-100 transition-colors">
+                            <h4 className="font-bold text-nau-blue mb-2 text-lg">Willow</h4>
+                            <p className="text-sm text-slate-600">For their industry-leading digital twin platform and data integration support.</p>
                         </div>
-                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                            <h4 className="font-bold text-nau-blue mb-2">Alerton Compass</h4>
-                            <p className="text-sm text-slate-600">For providing foundational building control system access.</p>
+                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100 hover:bg-slate-100 transition-colors">
+                            <h4 className="font-bold text-nau-blue mb-2 text-lg">Alerton Compass</h4>
+                            <p className="text-sm text-slate-600">For providing foundational building control system access and infrastructure.</p>
                         </div>
-                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                            <h4 className="font-bold text-nau-blue mb-2">Niagara Framework</h4>
+                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100 hover:bg-slate-100 transition-colors">
+                            <h4 className="font-bold text-nau-blue mb-2 text-lg">Niagara Framework</h4>
                             <p className="text-sm text-slate-600">For enabling the complex workflows and integration capabilities required for this strategy.</p>
                         </div>
                     </div>
-                    <p className="mt-8 text-sm text-slate-500 italic">
+                    <p className="mt-8 text-sm text-slate-500 italic text-center border-t border-slate-100 pt-6">
                         Special thanks to the NAU Facility Services team for their mentorship and guidance throughout the 2025-2026 academic year.
                     </p>
                 </div>
