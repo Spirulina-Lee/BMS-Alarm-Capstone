@@ -7,16 +7,15 @@ export const Home: React.FC = () => {
     <div className="flex flex-col min-h-screen bg-slate-900">
       {/* Hero Section */}
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh]">
-        {/* Background Image - NAU/Flagstaff Winter Vibe (Red Brick + Snow) */}
-        <div className="absolute inset-0 z-0 bg-nau-blue">
-          {/* Fallback background color in case image fails */}
+        {/* Background Image - NAU/Flagstaff Winter Vibe */}
+        <div className="absolute inset-0 z-0 bg-slate-900">
           <img 
-            src="https://images.unsplash.com/photo-1592931213038-66a931065f52?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1548504770-432d645e7774?q=80&w=2070&auto=format&fit=crop" 
             alt="NAU Campus Winter Style" 
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover"
           />
-          {/* Gradients for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-nau-blue/90 to-nau-blue/40 mix-blend-multiply"></div>
+          {/* Lighter overlay to ensure image is visible while keeping text readable */}
+          <div className="absolute inset-0 bg-nau-blue/75 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
         </div>
 

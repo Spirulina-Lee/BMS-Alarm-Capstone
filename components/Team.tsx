@@ -35,7 +35,7 @@ export const Team: React.FC = () => {
                     </div>
                     <div className="min-w-0 flex-1 w-full">
                         <h3 className="text-lg font-bold text-slate-900">{member.name}</h3>
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-x-2 gap-y-1 text-sm mt-1">
+                        <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-x-2 gap-y-1 text-sm mt-1">
                             <span className={`font-medium shrink-0 ${member.role === 'Team Lead' ? 'text-nau-gold' : 'text-slate-500'}`}>
                                 {member.role}
                             </span>
