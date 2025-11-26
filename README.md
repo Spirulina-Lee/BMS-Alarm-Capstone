@@ -2,8 +2,6 @@
 ## NAU Computer Engineering Capstone (2025-2026)
 
 
----
-
 ### 📖 Project Background
 
 Northern Arizona University (NAU) operates a centralized Building Management System (BMS) that monitors and controls HVAC and mechanical systems across campus. While this system generates critical alarms that help ensure occupant comfort and equipment performance, it also produces frequent nuisance alarms.
