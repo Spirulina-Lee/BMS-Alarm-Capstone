@@ -10,7 +10,7 @@ const Footer: React.FC = () => (
   <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
       <div className="text-center md:text-left">
-        <h3 className="text-white font-bold text-lg mb-1">NAU Capstone 2024</h3>
+        <h3 className="text-white font-bold text-lg mb-1">NAU Capstone 2025-2026</h3>
         <p className="text-sm">Intelligent BMS Alarm Management Strategy</p>
       </div>
       <div className="flex gap-6">
@@ -18,7 +18,7 @@ const Footer: React.FC = () => (
         <a href="https://nau.edu" target="_blank" rel="noreferrer" className="hover:text-white transition-colors"><ExternalLink className="h-5 w-5" /></a>
       </div>
       <div className="text-sm">
-        &copy; {new Date().getFullYear()} Northern Arizona University.
+        &copy; 2026 Northern Arizona University.
       </div>
     </div>
   </footer>

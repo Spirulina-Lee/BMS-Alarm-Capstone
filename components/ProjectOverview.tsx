@@ -10,16 +10,16 @@ export const ProjectOverview: React.FC = () => {
         <div className="mb-20">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">The Challenge: Alarm Fatigue</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">The Challenge: Fragmented Systems</h2>
               <p className="text-lg text-slate-600 mb-6">
-                NAU operates a centralized BMS monitoring HVAC and mechanical systems. However, frequent "nuisance alarms"—repetitive or low-value notifications—create significant noise. This obscures critical issues and reduces operator responsiveness.
+                NAU operates a complex ecosystem utilizing <span className="font-semibold text-nau-blue">Alerton Compass</span>, <span className="font-semibold text-nau-blue">Niagara Framework</span>, and <span className="font-semibold text-nau-blue">Willow</span>. While these tools are powerful, running them in parallel generates a high volume of fragmented alarms.
               </p>
               <ul className="space-y-4">
                 {[
-                  'High volume of non-actionable alarms',
-                  'Lack of context (e.g., alarming when building is empty)',
-                  'Operator desensitization ("Alarm Fatigue")',
-                  'Inefficient use of maintenance resources'
+                  'Disparate data sources (Compass, Niagara, Willow)',
+                  'High volume of nuisance alarms obscuring real issues',
+                  'Lack of unified context (e.g., occupancy vs. schedule)',
+                  'Operator "Alarm Fatigue" leading to slower response times'
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">
                     <AlertTriangle className="h-6 w-6 text-amber-500 shrink-0 mr-3" />
@@ -29,7 +29,7 @@ export const ProjectOverview: React.FC = () => {
               </ul>
             </div>
             <div className="mt-10 lg:mt-0 relative">
-               <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200">
+               <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200 shadow-inner">
                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Current vs. Proposed State</h3>
                  <div className="space-y-6">
                     <div>
@@ -51,8 +51,8 @@ export const ProjectOverview: React.FC = () => {
                         </div>
                     </div>
                  </div>
-                 <div className="mt-8 p-4 bg-white rounded-lg border border-slate-200 text-sm text-slate-600">
-                    "Our goal is to shift the operator's focus from acknowledging noise to solving problems."
+                 <div className="mt-8 p-4 bg-white rounded-lg border border-slate-200 text-sm text-slate-600 italic border-l-4 border-l-nau-blue">
+                    "Our goal is to unify the data from Niagara and Alerton into a single, intelligent prioritization layer."
                  </div>
                </div>
             </div>
@@ -69,7 +69,7 @@ export const ProjectOverview: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">1. Classification & Suppression</h3>
                 <p className="text-slate-600">
-                    We conducted a deep audit of historical alarm logs to identify patterns. Rules were developed to auto-suppress alarms caused by transient states or known non-critical deviations.
+                    We conducted a deep audit of historical alarm logs from Willow and Niagara to identify patterns. Rules were developed to auto-suppress alarms caused by transient states.
                 </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
@@ -87,7 +87,7 @@ export const ProjectOverview: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">3. Intelligent Interface</h3>
                 <p className="text-slate-600">
-                    Designing a prioritization dashboard that bubbles up high-value alarms. We are also prototyping AI-assisted diagnostics to help operators resolve issues faster.
+                    Designing a prioritization dashboard that bubbles up high-value alarms. We are also prototyping AI-assisted diagnostics using Google Gemini to help operators resolve issues faster.
                 </p>
             </div>
           </div>
