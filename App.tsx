@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ProjectOverview } from './components/ProjectOverview';
@@ -26,13 +27,15 @@ const Footer: React.FC = () => (
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-nau-gold/30">
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-nau-gold/30 flex flex-col">
       <Navbar />
-      <main>
-        <Hero />
-        <ProjectOverview />
-        <Dashboard />
-        <Team />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/methodology" element={<ProjectOverview />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/team" element={<Team />} />
+        </Routes>
       </main>
       <Footer />
     </div>
