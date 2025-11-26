@@ -4,9 +4,30 @@
 **Project Lead:** Shawn Young  
 **Institution:** Northern Arizona University (NAU)  
 
+---
+
+### 📖 Project Background
+
+Northern Arizona University (NAU) operates a centralized Building Management System (BMS) that monitors and controls HVAC and mechanical systems across campus. While this system generates critical alarms that help ensure occupant comfort and equipment performance, it also produces frequent nuisance alarms.
+
+**The Challenge:**
+Low-value or repetitive alarms create noise that can obscure true system issues and reduce operator efficiency (Alarm Fatigue). The current infrastructure involves disparated systems including **Alerton Compass**, **Niagara Framework**, and **Willow**.
+
+**The Solution:**
+This Capstone project delivers a unified alarm management strategy. By aggregating data from these systems and applying context-aware logic (occupancy schedules, maintenance modes), we can significantly reduce nuisance alarms and highlight actionable insights.
+
+### 🏗️ System Architecture
+
+The solution follows a multi-stage pipeline:
+
+1.  **Data Ingestion**: Aggregating alarm logs from Willow, Compass, and Niagara.
+2.  **Logic Layer**: Applying suppression rules based on building occupancy and schedules.
+3.  **Prioritization**: Ranking alarms dynamically (Critical vs. Info).
+4.  **Visualization**: A unified React-based dashboard for operators.
+
 ### 🚀 Local Development Guide
 
-Follow these instructions to deploy the application on a local machine.
+This is a modern web application built with **React**, **TypeScript**, and **Vite**. Follow these instructions to run the dashboard locally.
 
 #### 1. System Prerequisites
 *   **Node.js**: Version 18.0.0 or higher. [Download Node.js](https://nodejs.org/)

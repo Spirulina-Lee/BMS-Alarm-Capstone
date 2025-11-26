@@ -6,18 +6,17 @@ export const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh]">
-        {/* Background Image - NAU/Flagstaff Winter Vibe */}
-        <div className="absolute inset-0 z-0 bg-slate-900">
-          <img 
-            src="https://images.unsplash.com/photo-1548504770-432d645e7774?q=80&w=2070&auto=format&fit=crop" 
-            alt="NAU Campus Winter Style" 
-            className="w-full h-full object-cover"
-          />
-          {/* Lighter overlay to ensure image is visible while keeping text readable */}
-          <div className="absolute inset-0 bg-nau-blue/75 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
-        </div>
+      <div 
+        className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh] bg-nau-blue bg-cover bg-center bg-no-repeat"
+        style={{
+          // Using a high-quality Unsplash image of a red brick university building in winter (NAU Style)
+          backgroundImage: `url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop')`
+        }}
+      >
+        {/* Overlay - Adjusted opacity to be lighter so image is clearly visible */}
+        <div className="absolute inset-0 bg-nau-blue/60 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="text-center max-w-4xl mx-auto">
