@@ -11,7 +11,7 @@ export const Home: React.FC = () => {
         <div className="absolute inset-0 z-0 bg-nau-blue">
           {/* Fallback background color in case image fails */}
           <img 
-            src="https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1548842106-96b301764653?q=80&w=2070&auto=format&fit=crop" 
             alt="NAU Campus Winter Style" 
             className="w-full h-full object-cover opacity-60"
           />

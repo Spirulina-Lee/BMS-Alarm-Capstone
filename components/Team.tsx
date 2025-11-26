@@ -7,8 +7,8 @@ export const Team: React.FC = () => {
     { name: 'Evan Paddock', role: 'Team Member', major: 'Computer Engineering' },
     { name: 'Kaulan Hale', role: 'Team Member', major: 'Computer Engineering' },
     { name: 'Michael Miller', role: 'Team Member', major: 'Computer Engineering' },
-    { name: 'Xianzhe Li', role: 'Team Member', major: 'Computer Engineering' },
-    { name: 'Yuhuan Guo', role: 'Team Member', major: 'Computer Engineering' },
+    { name: 'Xianzhe Li', role: 'Team Member', major: 'Electrical Engineering' },
+    { name: 'Yuhuan Guo', role: 'Team Member', major: 'Electrical Engineering' },
   ];
 
   return (
@@ -18,7 +18,7 @@ export const Team: React.FC = () => {
         <div className="mb-16">
             <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Meet the Team</h1>
             <p className="max-w-2xl mx-auto text-lg text-slate-600">
-                The Computer Engineering Capstone team behind the Intelligent BMS Strategy.
+                The Capstone team behind the Intelligent BMS Strategy.
             </p>
         </div>
 
@@ -33,14 +33,14 @@ export const Team: React.FC = () => {
                             <Users className="h-6 w-6 text-nau-blue" />
                         )}
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                         <h3 className="text-lg font-bold text-slate-900">{member.name}</h3>
-                        <div className="flex items-center gap-2 text-sm">
-                            <span className={`font-medium ${member.role === 'Team Lead' ? 'text-nau-gold' : 'text-slate-500'}`}>
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm mt-0.5">
+                            <span className={`font-medium shrink-0 ${member.role === 'Team Lead' ? 'text-nau-gold' : 'text-slate-500'}`}>
                                 {member.role}
                             </span>
-                            <span className="text-slate-300">•</span>
-                            <span className="text-slate-500 truncate">{member.major}</span>
+                            <span className="text-slate-300 hidden sm:inline">•</span>
+                            <span className="text-slate-500">{member.major}</span>
                         </div>
                     </div>
                 </div>
