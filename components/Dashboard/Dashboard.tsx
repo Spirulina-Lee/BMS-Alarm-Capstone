@@ -16,7 +16,7 @@ export const Dashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-100 pt-24 pb-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto h-[calc(100vh-140px)] flex flex-col">
+      <div className="max-w-7xl mx-auto h-[calc(130vh-140px)] flex flex-col">
         {/* Header */}
         <div className="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0">
           <div>
@@ -47,8 +47,8 @@ export const Dashboard: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 flex-1 min-h-0">
             {/* Left Column: List & Stats */}
             <div className="lg:col-span-2 flex flex-col gap-6 h-full overflow-hidden">
-                {/* Chart Section */}
-                <div className="shrink-0 h-[280px]">
+                {/* Chart Section - responsive height with safe spacing */}
+                <div className="shrink-0 h-[200px] md:h-[220px] lg:h-[260px]">
                     <AlarmChart />
                 </div>
 

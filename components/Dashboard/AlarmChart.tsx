@@ -13,9 +13,10 @@ import { CHART_DATA } from '../../constants';
 
 export const AlarmChart: React.FC = () => {
   return (
-    <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-[300px]">
-      <h3 className="text-sm font-semibold text-slate-700 mb-4">Daily Alarm Volume: Total vs. Suppressed</h3>
-      <ResponsiveContainer width="100%" height="85%">
+    <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full flex flex-col">
+      <h3 className="text-sm font-semibold text-slate-700 mb-3 shrink-0">Daily Alarm Volume: Total vs. Suppressed</h3>
+      <div className="flex-1 min-h-0">
+      <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={CHART_DATA}
           margin={{
@@ -46,6 +47,7 @@ export const AlarmChart: React.FC = () => {
           <Bar dataKey="suppressed" name="Suppressed (Noise)" fill="#cbd5e1" radius={[4, 4, 0, 0]} barSize={20} />
         </BarChart>
       </ResponsiveContainer>
+      </div>
     </div>
   );
 };
