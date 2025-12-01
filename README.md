@@ -1,5 +1,5 @@
 # Intelligent BMS Alarm Management Strategy
-## NAU Computer Engineering Capstone (2025-2026)
+## NAU Electrical Engineering Capstone (2025-2026)
 
 
 ### 📖 Project Background
