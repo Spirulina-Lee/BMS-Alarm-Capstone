@@ -1,12 +1,14 @@
 import React from 'react';
 import { Award, GraduationCap, Users } from 'lucide-react';
+import shawnImg from '../assets/team/shawn.jpg';
+import michaelImg from '../assets/team/michael.jpg'
 
 export const Team: React.FC = () => {
   const teamMembers = [
-    { name: 'Shawn Young', role: 'Team Lead', major: 'Computer Engineering' },
+    { name: 'Shawn Young', role: 'Team Lead', major: 'Computer Engineering', image: shawnImg },
     { name: 'Evan Paddock', role: 'Team Member', major: 'Computer Engineering' },
     { name: 'Kaulan Hale', role: 'Team Member', major: 'Computer Engineering' },
-    { name: 'Michael Miller', role: 'Team Member', major: 'Computer Engineering' },
+    { name: 'Michael Miller', role: 'Team Member', major: 'Computer Engineering', image: michaelImg },
     { name: 'Xianzhe Li', role: 'Team Member', major: 'Electrical Engineering' },
     { name: 'Yuhuan Guo', role: 'Team Member', major: 'Electrical Engineering' },
   ];
@@ -26,13 +28,21 @@ export const Team: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 max-w-5xl mx-auto">
             {teamMembers.map((member, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row items-start sm:items-center text-left gap-4 h-full">
-                    <div className="h-12 w-12 rounded-full bg-nau-blue/10 flex items-center justify-center shrink-0 mt-1 sm:mt-0">
-                        {member.role === 'Team Lead' ? (
-                            <Award className="h-6 w-6 text-nau-gold" />
-                        ) : (
-                            <Users className="h-6 w-6 text-nau-blue" />
-                        )}
-                    </div>
+                    {member.image ? (
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="h-12 w-12 rounded-full object-cover ring-2 ring-slate-100 shrink-0 mt-1 sm:mt-0"
+                        />
+                    ) : (
+                        <div className="h-12 w-12 rounded-full bg-nau-blue/10 flex items-center justify-center shrink-0 mt-1 sm:mt-0">
+                            {member.role === 'Team Lead' ? (
+                                <Award className="h-6 w-6 text-nau-gold" />
+                            ) : (
+                                <Users className="h-6 w-6 text-nau-blue" />
+                            )}
+                        </div>
+                    )}
                     <div className="min-w-0 flex-1 w-full">
                         <h3 className="text-lg font-bold text-slate-900">{member.name}</h3>
                         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm mt-1">
