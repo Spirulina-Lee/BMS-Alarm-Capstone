@@ -7,7 +7,6 @@ export const Team: React.FC = () => {
   const teamMembers = [
     { name: 'Shawn Young', role: 'Team Lead', major: 'Computer Engineering', image: shawnImg },
     { name: 'Evan Paddock', role: 'Team Member', major: 'Computer Engineering' },
-    { name: 'Kaulan Hale', role: 'Team Member', major: 'Computer Engineering' },
     { name: 'Michael Miller', role: 'Team Member', major: 'Computer Engineering', image: michaelImg },
     { name: 'Xianzhe Li', role: 'Team Member', major: 'Electrical Engineering' },
     { name: 'Yuhuan Guo', role: 'Team Member', major: 'Electrical Engineering' },
